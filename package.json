@@ -1,19 +1,25 @@
 {
   "name": "shema",
   "version": "1.0.0",
-  "description": "Shema MERN Stack Ecommerce application",
+  "description": "Monti MERN Stack Ecommerce application",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "install-all": "concurrently \"npm i --prefix ./client\" \"npm i --prefix ./server\"",
+    "start": "npm start --prefix ./server",
+    "server": "npm run dev --prefix ./server",
+    "client": "npm start --prefix ./client",
+    "dev": "concurrently \"npm run servers\" \"npm run client\""
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Bereky/shema-mern-ecommerce.git"
+    "url": "git+https://github.com/melodydev0521/monti-ecommerce.git"
   },
-  "author": "Bereket Lemma",
+  "author": "MelodyDev",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Bereky/shema-mern-ecommerce/issues"
+    "url": "https://github.com/melodydev0521/monti-ecommerce/issues"
   },
-  "homepage": "https://github.com/Bereky/shema-mern-ecommerce#readme"
+  "dependencies": {
+    "concurrently": "^7.6.0"
+  }
 }

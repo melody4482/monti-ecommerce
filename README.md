@@ -23,6 +23,24 @@ Full-stack ecommerce application built with MERN stack. This project has two fea
 
 After you cloned the repository do not start the application. To run the application fully you need to create a database and collection and provide your own database URI.
 
+### Scripts
+
+- Install all packages for client and server
+
+  ```bash
+  npm run install-all
+  ```
+- Start Server by Production mode
+  
+  ```bash
+  npm start
+  ```
+- Start Server by Development mode
+
+  ```bash
+  npm run dev
+  ```
+
 ### Setup
 
 - Go to MongoDB website and create a database and a collection named 'Items' and insert the data in the <code>server/ItemsCollection.js</code> file as a document.
